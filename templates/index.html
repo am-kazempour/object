@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLOv11 Demo</title>
+</head>
+<body>
+    <h1>آپلود عکس برای تشخیص YOLOv11n</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required />
+        <button type="submit">آپلود و تشخیص</button>
+    </form>
+    {% if output_image %}
+    <h2>خروجی YOLO:</h2>
+    <img src="{{ url_for('uploaded_file', filename=output_image) }}" style="max-width:100%;"/>
+    {% endif %}
+</body>
+</html>
