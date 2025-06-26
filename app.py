@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
 # مدل YOLOv11n رو لود کن
-model = YOLO("yolov11n.pt")  # مطمئن شو تو محیطت YOLOv11 رو نصب کردی
+model = YOLO("yolo11n.pt")  # مطمئن شو تو محیطت YOLOv11 رو نصب کردی
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
