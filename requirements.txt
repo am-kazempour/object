@@ -1,4 +1,4 @@
 Flask==3.0.3
 gunicorn==22.0.0
-ultralytics==8.2.28
+ultralytics==8.3.159
 Pillow==10.3.0
