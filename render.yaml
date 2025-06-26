@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: amin-yolo-app
+    runtime: python-3.10           # 👈 مشخص کردن پایتون 3.10
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
